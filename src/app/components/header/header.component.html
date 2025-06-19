@@ -176,7 +176,10 @@
             <div class="hidden lg:ml-8 lg:flex">
               <a href="#" class="flex items-center text-gray-700 hover:text-gray-800">
                 <span class="sr-only ">, change currency</span>
-             <app-primary-btn [label]="'cart(' + cartService.cart().length + ')'"></app-primary-btn>
+                
+                  <app-primary-btn [label]="'cart(' + cartService.cart().length + ')'" 
+                  routerLink='/cart' /> 
+
 
 
               </a>
@@ -185,3 +188,4 @@
         </div>
       </div>
     </nav>
+

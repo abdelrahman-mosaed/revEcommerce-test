@@ -2,11 +2,12 @@ import { Component, signal } from '@angular/core';
 import { product } from '../../models/products.model';
 import { CommonModule } from '@angular/common';
 import { ProcardComponent } from '../proList/procard/procard.component';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 
 @Component({
   selector: 'app-pro-list',
-  imports: [CommonModule,ProcardComponent],
+  imports: [CommonModule,ProcardComponent,RouterModule],
   templateUrl: './pro-list.component.html',
   styleUrl: './pro-list.component.css'
 })

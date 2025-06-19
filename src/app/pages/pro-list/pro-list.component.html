@@ -1,6 +1,8 @@
-<div class="p-8 grid grid-2 flex" *ngFor="let product of products()">
+<div class="p-8  grid-2 " *ngFor="let product of products()">
     
 
   
 <app-procard [product]="product"></app-procard>
 </div>
+
+<router-outlet></router-outlet>
